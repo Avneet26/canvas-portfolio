@@ -78,7 +78,7 @@ for (let i = 0; i < 1000; i++) {
     ballArray.push(new Ball(x, y, dx, dy, radius, color));
 }
 
-canvas.addEventListener('mousemove', (eve) => {
+window.addEventListener('mousemove', (eve) => {
     mousePos.x = eve.clientX;
     mousePos.y = eve.clientY;
 });

@@ -8,24 +8,105 @@
 }
 
 header{
-    height: 80px;
-    border-bottom: 2px lightskyblue solid;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 40px;
+	border-bottom: 2px lightskyblue solid;
+}
+
+header > div {
+	height: 80px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
 }
 
 canvas{
     border-bottom: 2px solid lightskyblue;
 }
-
+.canvas-banner-content {
+	position: relative;
+}
 .nav-menu-desktop a {
 	margin-left: 14px;
 	text-decoration: none;
 	color: #333;
+    transition: color 200ms ease;
 }
 
 .nav-menu-desktop a:hover{
     text-decoration: underline;
+    color: #ff5400;
+}
+
+.canvas-content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.canvas-image img {
+	width: 140px;
+	border-radius: 50%;
+	border: 2px solid #ff5400;
+	margin-left: 20px;
+}
+
+.canvas-text h1 {
+	font-size: 48px;
+	color: #ff5400;
+	line-height: 1;
+}
+
+.canvas-text h3 {
+	font-size: 23px;
+	color: #444;
+	font-weight: 500;
+	position: relative;
+	overflow: hidden;
+}
+
+.canvas-text h3::after {
+	content: "";
+	width: 100%;
+	height: 1px;
+	border-bottom: 3px solid #ff5400;
+	position: absolute;
+	bottom: 13px;
+	margin-left: 5px;
+}
+
+.aboutme-inner {
+	max-width: 1200px;
+	margin: 50px auto;
+	padding: 0 20px;
+}
+
+.aboutme-inner h2 {
+	color: #ff5400;
+	font-size: 35px;
+	position: relative;
+	overflow: hidden;
+}
+
+.aboutme-inner h2::after {
+	content: "";
+	width: 100%;
+	border-bottom: 3px solid #666;
+	height: 1px;
+	position: absolute;
+	bottom: 50%;
+	margin-left: 10px;
+}
+
+.aboutme-inner p {
+	margin-bottom: 17px;
+	font-weight: 300;
+	letter-spacing: 0.5px;
 }
