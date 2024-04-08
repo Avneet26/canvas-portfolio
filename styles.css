@@ -175,9 +175,11 @@ canvas {
 }
 
 .project-image-container img {
-	width: 300px;
+	width: 280px;
 	border: 3px solid #ff540055;
 	border-radius: 5px;
+	height: 170px;
+	object-fit: cover;
 }
 
 .project-container {
@@ -214,4 +216,9 @@ canvas {
 
 .project-section-wrapper {
 	margin-top: 40px;
+}
+
+.project-description {
+	margin: 10px 0;
+	color: #454545;
 }
